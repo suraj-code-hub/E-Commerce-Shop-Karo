@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport"content="width=device=width,initial-scale=1.0">
+        <title>ShopKaro</title>
+        <link rel="stylesheet"href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+        <body>
+
+              <!----naviation bar------>
+              <section id="header"> 
+               <!----<a href="#"><img src="logo" class="logo" alt="logo"></a>-->
+               <a class="navbar-brand" href="index.html" id="logo"><span id="span1">S</span>hop <span>Karo</span></a>
+                <div>
+                    <ul id="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a class ="active" href="loginSignup.html"><i class="fa fa-user" aria-hidden="true"></i>
+                        </a></li>
+                        <div class="navbar">
+                            <!--<a href="index.html">Home</a>-->
+
+                            <!--<a href="cart.html">
+                               <div class="cart">
+                                    <div id="cart_amount">0</div>
+                               </div>
+                            </a>
+                         </div>-->
+
+                        <!--<li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>-->
+                        <!--<li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>--->
+
+                     </ul>
+                </div>
+                
+             </section>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <p>Lost Password <a href="#">Click Here!</a></p>
+            </div>
+            <div class="btn-field">
+
+                <button type="button" id="signupBtn">Sign Up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+            </div>
+        </form>
+    </div>
+        
+</div>
+
+
+<script>
+
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+    
+        signinBtn.onclick= function(){
+        nameField.style.maxHeight = "0"; 
+        title.innerHTML = "sign In";
+        signinBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+    }
+
+    signupBtn.onclick= function(){
+        nameField.style.maxHeight = "60px"; 
+        title.innerHTML = "sign Up";
+        signinBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+    }
+
+
+</script>
+
+ <!---------------------------------------Footer--------------------------------------->
+ <footer>
+
+    <div class="all-items">
+        <!-------info--------->
+        <div class="item-list">
+            <p class="item-title">Products</p>
+            <ul>
+                
+                <li class="item">
+                    <a href="#">Electronic products</a>
+                </li>
+                <li class="item">
+                    <a href="#">Electronics parts</a>
+                </li>
+                <li class="item">
+                    <a href="#">Electric parts</a>
+                </li>
+                <li class="item">
+                    <a href="#">Electrics products</a>
+                </li>
+                <li class="item">
+                    <a href="#">And More Items</a>
+                </li>
+                
+            </ul>
+            
+
+            
+        </div>
+        <!-------navigate--------->
+        <div class="item-list">
+            <p class="item-title">Navigate</p>
+            <ul>
+                <li class="item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="item">
+                    <a href="#">Shop</a>
+                </li>
+                <li class="item">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="item">
+                    <a href="#">About</a>
+                </li>
+                <li class="item">
+                    <a href="#">ContactUs</a>
+                </li>
+            </ul>
+            
+
+            
+        </div>
+        <!-------social--------->
+        <div class="item-list">
+            <p class="item-title">Social</p>
+            <ul>
+                <li class="item">
+                    <a href="#">Facebook</a>
+                </li>
+                <li class="item">
+                    <a href="#">Inastagram</a>
+                </li>
+                <li class="item">
+                    <a href="#">Youtube</a>
+                </li>
+                <li class="item">
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+            
+
+            
+        </div>
+        <!-------contact--------->
+        <div class="item-list">
+            <p class="item-title">contact</p>
+            <ul>
+                <li class="item">
+                    <a href="surajkumar754100@gmail.com"> surajkumar754100@gmail.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+91 7541003467">+91 7541003467</a>
+                </li>
+                <li class="item">
+                    <a href="#"> abcd Rode, delhi,India</a>
+                </li>
+               
+            </ul>
+            
+
+            
+        </div>
+    
+    </div>
+    
+    <p class="copyrights">Developed By <a href="#">Suraj</a></p>
+    
+    
+</footer>
+
+
+
+</body>
+</html>
